@@ -9,6 +9,7 @@ on:
 
 jobs:
   test-job:
+    ## Only run this job if the IS_PUBLIC_ENVIRONMENT is false
     if: ${{ vars.IS_PUBLIC_ENVIRONMENT == 'false' }}
     runs-on: ubuntu-latest
     steps:
