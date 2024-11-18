@@ -11,7 +11,7 @@ jobs:
   test-job:
     ## Only run this job if the IS_PUBLIC_ENVIRONMENT is false
     environment: dev
-    if: ${{ vars.IS_PUBLIC_ENVIRONMENT == 'false' }}
+    if: ${{ vars.IS_PUBLIC_ENVIRONMENT == 'true' }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
